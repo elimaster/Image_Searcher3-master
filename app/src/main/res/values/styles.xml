@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" -->
+    <!-- Customize your theme here. -->
+    <!-- item name="colorPrimary">@color/colorPrimary</item -->
+    <!-- item name="colorPrimaryDark">@color/colorPrimaryDark</item -->
+    <!-- item name="colorAccent">@color/colorAccent</item -->
+    <!-- /style -->
+
+    <!--style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar"-->
+    <!-- Customize your theme here. -->
+    <!--/style-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- item name="colorPrimary">@color/colorPrimary</item -->
+        <!-- item name="colorPrimaryDark">@color/colorPrimaryDark</item -->
+        <!-- item name="colorAccent">@color/colorAccent</item -->
+    </style>
+
+    <style name="Theme.Base" parent="AppTheme">
+        <item name="colorPrimary">@color/flickrColorPrimary</item>
+        <item name="colorPrimaryDark">@color/flickrColorPrimaryDark</item>
+        <item name="colorAccent">@color/flickrColorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/flickrColorBackground</item>
+    </style>
+
+    <style name="Theme.Flickr" parent="Theme.Base"></style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">@color/flickrColorPrimaryText</item>
+        <item name="colorControlHighlight">@color/flickrColorBackground</item>
+        <item name="android:actionMenuTextColor">@color/flickrColorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/flickrColorSecondaryText</item>
+        <item name="android:background">@color/flickrColorPrimary</item>
+    </style>
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/flickrColorPrimaryText</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+
+    </style>
+
+    <style name="Theme.Flickr.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Flickr.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+

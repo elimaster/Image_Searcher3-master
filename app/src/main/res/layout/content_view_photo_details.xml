@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flickr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    flickr:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.emaster.imagesearcher.ViewPhotoDetailsActivity"
+    tools:showIn="@layout/activity_photo_details">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        flickr:cardBackgroundColor="@color/flickrColorPrimary"
+        flickr:cardCornerRadius="8dp"
+        flickr:cardPreventCornerOverlap="false"
+        flickr:contentPaddingTop="16dp"
+        flickr:contentPaddingBottom="16dp">
+        <LinearLayout
+            android:onClick="onPanelClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/photo_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:onClick="onImageClick"
+                    android:src="@drawable/placeholder"/>
+                <TextView
+                    android:id="@+id/photo_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/flickrColorSecondaryText"
+                    android:textSize="14sp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/photo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/flickrColorPrimaryText"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/photo_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/flickrColorPrimaryText"
+                android:textSize="10sp"/>
+            <!-- hidden tags -->
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/photo_date_taken"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/flickrColorPrimaryText"
+                android:textSize="10sp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/photo_date_published"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/flickrColorPrimaryText"
+                android:textSize="10sp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/photo_author_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/flickrColorPrimaryText"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+</ScrollView>

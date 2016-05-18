@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Поисковик Картинок</string>
+    <string name="action_search">Поиск</string>
+    <string name="title_activity_search">поиск</string>
+    <string name="settings">Установки</string>
+    <string name="searchable_label">запрос поиска</string>
+    <string name="searchable_hint">введите тэги</string>
+</resources>
